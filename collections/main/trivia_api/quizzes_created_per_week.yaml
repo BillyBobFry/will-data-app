@@ -1,0 +1,51 @@
+name: Quizzes created per week
+description: Quizzes created per week (last 52 weeks).
+entity_id: 87fdrxFagz-YLKuQSW4pQ
+created_at: '2026-09-28T19:31:18.33768Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - temporal-unit: week
+      - - Trivia DB
+        - null
+        - quiz
+        - createdAt
+    filters:
+    - - time-interval
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - quiz
+          - createdAt
+      - -52
+      - week
+    source-table:
+    - Trivia DB
+    - null
+    - quiz
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - createdAt
+  graph.metrics:
+  - count
+card_schema: 24
+serdes/meta:
+- id: 87fdrxFagz-YLKuQSW4pQ
+  label: quizzes_created_per_week
+  model: Card
+type: question

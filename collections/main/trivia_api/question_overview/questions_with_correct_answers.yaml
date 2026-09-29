@@ -1,0 +1,106 @@
+name: Questions with correct answers
+entity_id: ueuAd7E4JgiBeIY0D_BQ-
+created_at: '2026-09-10T16:39:15.584783Z'
+creator_id: will@example.com
+display: table
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - fields:
+    - - field
+      - base-type: type/MongoBSONID
+        effective-type: type/MongoBSONID
+      - - Trivia DB
+        - null
+        - question
+        - _id
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - question
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswer
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswerRatio
+        - correct
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswerRatio
+        - incorrect
+    - - field
+      - base-type: type/Array
+        effective-type: type/Array
+      - - Trivia DB
+        - null
+        - question
+        - acceptedAnswers
+        - en
+    filters:
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    - - '>'
+      - effective-type: type/Boolean
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - correct
+      - 0
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - type
+      - text_input
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  table.cell_column: correctAnswerRatio.correct
+  table.pivot: false
+card_schema: 24
+serdes/meta:
+- id: ueuAd7E4JgiBeIY0D_BQ-
+  label: questions_with_correct_answers
+  model: Card
+dashboard_id: MTiozAgYVAcZVLGINdk6v
+type: question

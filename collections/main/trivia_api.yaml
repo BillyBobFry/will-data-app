@@ -1,0 +1,9 @@
+name: Trivia API
+entity_id: 5qfLb9Uh-eaKxVzd4566F
+slug: trivia_api
+created_at: '2026-09-10T16:16:07.837416Z'
+serdes/meta:
+- id: 5qfLb9Uh-eaKxVzd4566F
+  label: trivia_api
+  model: Collection
+is_remote_synced: true

@@ -1,0 +1,654 @@
+name: Question overview
+entity_id: MTiozAgYVAcZVLGINdk6v
+created_at: '2026-09-10T16:16:43.544179Z'
+creator_id: will@example.com
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+collection_position: 1
+parameters: []
+serdes/meta:
+- id: MTiozAgYVAcZVLGINdk6v
+  label: question_overview
+  model: Dashboard
+dashcards:
+- entity_id: xDOAYwb0LzD431g2oFLMA
+  card_id: OE70mNnv_bzDlWiaRezi6
+  created_at: '2026-09-10T16:17:06.308847Z'
+  row: 0
+  col: 0
+  size_x: 13
+  size_y: 10
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+    visualization:
+      columnValuesMapping:
+        COLUMN_1:
+        - name: COLUMN_1
+          originalName: category
+          sourceId: card:OE70mNnv_bzDlWiaRezi6
+        COLUMN_2:
+        - name: COLUMN_2
+          originalName: count
+          sourceId: card:OE70mNnv_bzDlWiaRezi6
+      display: pie
+      settings:
+        graph.x_axis.scale: ordinal
+        pie.dimension: COLUMN_1
+        pie.metric: COLUMN_2
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: xDOAYwb0LzD431g2oFLMA
+    model: DashboardCard
+- entity_id: xxqnqwLjpWzzP1qibI56N
+  card_id: X_85VrTertR3rzrtvvsYM
+  created_at: '2026-09-10T16:32:01.522624Z'
+  row: 0
+  col: 13
+  size_x: 11
+  size_y: 10
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+    visualization:
+      columnValuesMapping:
+        COLUMN_1:
+        - name: COLUMN_1
+          originalName: type
+          sourceId: card:X_85VrTertR3rzrtvvsYM
+        COLUMN_2:
+        - name: COLUMN_2
+          originalName: count
+          sourceId: card:X_85VrTertR3rzrtvvsYM
+      display: pie
+      settings:
+        graph.x_axis.scale: ordinal
+        pie.dimension: COLUMN_1
+        pie.metric: COLUMN_2
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: xxqnqwLjpWzzP1qibI56N
+    model: DashboardCard
+- entity_id: RkBzFcGZfuqAfQMQb_e23
+  card_id: WEq7d2WXDWMftaYDIkfdv
+  created_at: '2026-09-10T16:33:28.259896Z'
+  row: 10
+  col: 0
+  size_x: 13
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+    visualization:
+      columnValuesMapping:
+        COLUMN_1:
+        - name: COLUMN_1
+          originalName: state
+          sourceId: card:WEq7d2WXDWMftaYDIkfdv
+        COLUMN_2:
+        - name: COLUMN_2
+          originalName: count
+          sourceId: card:WEq7d2WXDWMftaYDIkfdv
+      display: pie
+      settings:
+        graph.x_axis.scale: ordinal
+        pie.dimension: COLUMN_1
+        pie.metric: COLUMN_2
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: RkBzFcGZfuqAfQMQb_e23
+    model: DashboardCard
+- entity_id: 5M13rmXB9tvW1HUZdVBpp
+  card_id: eYscdAPoNfaJOkQPsXBpO
+  created_at: '2026-09-10T16:30:14.082777Z'
+  row: 19
+  col: 0
+  size_x: 24
+  size_y: 12
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: 5M13rmXB9tvW1HUZdVBpp
+    model: DashboardCard
+- entity_id: cFDgnkJuxjDg8q7gJh-md
+  card_id: ueuAd7E4JgiBeIY0D_BQ-
+  created_at: '2026-09-10T16:39:15.596501Z'
+  row: 31
+  col: 0
+  size_x: 24
+  size_y: 13
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: cFDgnkJuxjDg8q7gJh-md
+    model: DashboardCard
+- entity_id: YbJDxp5YgKuIeqqvGXKAD
+  card_id: 1wtlJ_50tV4wq1c2H_sd0
+  created_at: '2026-09-11T10:26:59.221565Z'
+  row: 44
+  col: 0
+  size_x: 24
+  size_y: 11
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - Dwkv-n3Otshx-rgWNSku8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+  - id: YbJDxp5YgKuIeqqvGXKAD
+    model: DashboardCard
+- entity_id: sI8i9rgefEpb0gCwfOfk6
+  card_id: -flS3RKDnvNmOGb17BZnH
+  created_at: '2026-09-16T09:39:55.027367Z'
+  row: 0
+  col: 0
+  size_x: 24
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: sI8i9rgefEpb0gCwfOfk6
+    model: DashboardCard
+- entity_id: uici_LrPa0WMUgShoHvf_
+  card_id: c4Wnfjy_dOrq4GJyE1sgt
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 8
+  col: 0
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: uici_LrPa0WMUgShoHvf_
+    model: DashboardCard
+- entity_id: Gm7vhPP_RZWd6gCciWLYi
+  card_id: Q4TmEHgE_8QKDpligO59o
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 8
+  col: 12
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: Gm7vhPP_RZWd6gCciWLYi
+    model: DashboardCard
+- entity_id: DxorRAifyW9_iLiJzoxHg
+  card_id: w4gRTnr8D-uqRRBqhiQi8
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 17
+  col: 0
+  size_x: 24
+  size_y: 3
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: DxorRAifyW9_iLiJzoxHg
+    model: DashboardCard
+- entity_id: SDsEqjac6AAEroAsA8wPX
+  card_id: AVadWajgUBke3Wxsiz99t
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 20
+  col: 0
+  size_x: 24
+  size_y: 12
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: SDsEqjac6AAEroAsA8wPX
+    model: DashboardCard
+- entity_id: Nsg3pgVVDcYtu-CM0ikGU
+  card_id: yJF5lnRN0XVj8wHp3OGnr
+  created_at: '2026-09-28T18:52:05.16485Z'
+  row: 32
+  col: 0
+  size_x: 24
+  size_y: 14
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - UYnwk2vJBPC-A7K5_ehdU
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+  - id: Nsg3pgVVDcYtu-CM0ikGU
+    model: DashboardCard
+- entity_id: 7ctHdB4l8buxnyKIDLhHE
+  card_id: 0vLc034poCft6ZfkohE__
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 0
+  col: 0
+  size_x: 12
+  size_y: 3
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: 7ctHdB4l8buxnyKIDLhHE
+    model: DashboardCard
+- entity_id: Q5QiuFh7CJzraysCMKllM
+  card_id: qZnqecfbQcHxv3_L4o0jy
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 0
+  col: 12
+  size_x: 12
+  size_y: 3
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: Q5QiuFh7CJzraysCMKllM
+    model: DashboardCard
+- entity_id: Efi3zIF7tcF1_3Ksn7eY4
+  card_id: tOzWA4Xvuj7HFVtiwMiII
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 3
+  col: 0
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: Efi3zIF7tcF1_3Ksn7eY4
+    model: DashboardCard
+- entity_id: FQIz3DwWzOgl67CR4zOk9
+  card_id: 2vJcExAyav8aXhPSl-Dkj
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 3
+  col: 12
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: FQIz3DwWzOgl67CR4zOk9
+    model: DashboardCard
+- entity_id: 4oM_dGnCUGzzU6cMVIl3k
+  card_id: cOmcDioWBVPvcIAaJcA_G
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 12
+  col: 0
+  size_x: 24
+  size_y: 10
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: 4oM_dGnCUGzzU6cMVIl3k
+    model: DashboardCard
+- entity_id: mFvkZdqpKEuGBIC0yOOJX
+  card_id: t-hK-_28PstxVwQdky6uo
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 22
+  col: 0
+  size_x: 24
+  size_y: 10
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - E2mNjHfyaXNNtn_0VJqcl
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+  - id: mFvkZdqpKEuGBIC0yOOJX
+    model: DashboardCard
+- entity_id: hy3LYV_fjEfFLWGrkLLHt
+  card_id: g-0Mk4mc8CZHIoiYZrPcT
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 0
+  col: 0
+  size_x: 16
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - 77K0vKCGIpUiXzI3bMuCH
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: 77K0vKCGIpUiXzI3bMuCH
+    model: DashboardTab
+  - id: hy3LYV_fjEfFLWGrkLLHt
+    model: DashboardCard
+- entity_id: 4DDlo_QvjqlsfVL1XEz4w
+  card_id: tmGp7_lj6vF-W1fVXk_XL
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 0
+  col: 16
+  size_x: 8
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - 77K0vKCGIpUiXzI3bMuCH
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: 77K0vKCGIpUiXzI3bMuCH
+    model: DashboardTab
+  - id: 4DDlo_QvjqlsfVL1XEz4w
+    model: DashboardCard
+- entity_id: rGW6logMP0A_SWGp78O6v
+  card_id: FfWi9nRNdNdY-DxwQ0jom
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 8
+  col: 0
+  size_x: 24
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - 77K0vKCGIpUiXzI3bMuCH
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: 77K0vKCGIpUiXzI3bMuCH
+    model: DashboardTab
+  - id: rGW6logMP0A_SWGp78O6v
+    model: DashboardCard
+- entity_id: csed21B-hIleb-7aW2SLz
+  card_id: 2PEAOztRzAdyFsv4ayQl-
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 0
+  col: 0
+  size_x: 24
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - YcUhvWnKkSz4xOs1mzov7
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: YcUhvWnKkSz4xOs1mzov7
+    model: DashboardTab
+  - id: csed21B-hIleb-7aW2SLz
+    model: DashboardCard
+- entity_id: ROLLHeoyQNDcPlflTZBa_
+  card_id: WeMuuUShTCa9_U33k-RyD
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 8
+  col: 0
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - YcUhvWnKkSz4xOs1mzov7
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: YcUhvWnKkSz4xOs1mzov7
+    model: DashboardTab
+  - id: ROLLHeoyQNDcPlflTZBa_
+    model: DashboardCard
+- entity_id: RbR9peHJ9DwGj44kLkQXn
+  card_id: r-cnYVGQbje-I8cjiEA96
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 8
+  col: 12
+  size_x: 12
+  size_y: 9
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - YcUhvWnKkSz4xOs1mzov7
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: YcUhvWnKkSz4xOs1mzov7
+    model: DashboardTab
+  - id: RbR9peHJ9DwGj44kLkQXn
+    model: DashboardCard
+- entity_id: JnhpOF5QQKIosqUZUowjb
+  card_id: 87fdrxFagz-YLKuQSW4pQ
+  created_at: '2026-09-28T19:31:52.310889Z'
+  row: 17
+  col: 0
+  size_x: 24
+  size_y: 8
+  dashboard_tab_id:
+  - MTiozAgYVAcZVLGINdk6v
+  - YcUhvWnKkSz4xOs1mzov7
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: YcUhvWnKkSz4xOs1mzov7
+    model: DashboardTab
+  - id: JnhpOF5QQKIosqUZUowjb
+    model: DashboardCard
+tabs:
+- created_at: '2026-09-10T16:30:38.371611Z'
+  entity_id: Dwkv-n3Otshx-rgWNSku8
+  name: Overview
+  position: 0
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: Dwkv-n3Otshx-rgWNSku8
+    model: DashboardTab
+- created_at: '2026-09-10T16:30:38.371611Z'
+  entity_id: UYnwk2vJBPC-A7K5_ehdU
+  name: Question creation
+  position: 1
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: UYnwk2vJBPC-A7K5_ehdU
+    model: DashboardTab
+- created_at: '2026-09-28T19:31:52.310889Z'
+  entity_id: E2mNjHfyaXNNtn_0VJqcl
+  name: Content quality
+  position: 2
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: E2mNjHfyaXNNtn_0VJqcl
+    model: DashboardTab
+- created_at: '2026-09-28T19:31:52.310889Z'
+  entity_id: 77K0vKCGIpUiXzI3bMuCH
+  name: Reports
+  position: 3
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: 77K0vKCGIpUiXzI3bMuCH
+    model: DashboardTab
+- created_at: '2026-09-28T19:31:52.310889Z'
+  entity_id: YcUhvWnKkSz4xOs1mzov7
+  name: Usage
+  position: 4
+  serdes/meta:
+  - id: MTiozAgYVAcZVLGINdk6v
+    model: Dashboard
+  - id: YcUhvWnKkSz4xOs1mzov7
+    model: DashboardTab
+width: fixed

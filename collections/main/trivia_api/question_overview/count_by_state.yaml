@@ -1,0 +1,42 @@
+name: Count by state
+entity_id: WEq7d2WXDWMftaYDIkfdv
+created_at: '2026-09-10T16:33:28.250586Z'
+creator_id: will@example.com
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - state
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - state
+  graph.metrics:
+  - count
+  graph.x_axis.scale: ordinal
+card_schema: 24
+serdes/meta:
+- id: WEq7d2WXDWMftaYDIkfdv
+  label: count_by_state
+  model: Card
+dashboard_id: MTiozAgYVAcZVLGINdk6v
+type: question

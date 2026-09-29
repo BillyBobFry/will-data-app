@@ -1,0 +1,74 @@
+name: Reviews per week
+description: Approved vs rejected questions per week, by reviewedAt (last 26 weeks).
+entity_id: c4Wnfjy_dOrq4GJyE1sgt
+created_at: '2026-09-28T19:31:13.276347Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - temporal-unit: week
+      - - Trivia DB
+        - null
+        - question
+        - reviewedAt
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - state
+    filters:
+    - - in
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+      - rejected
+    - - time-interval
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - reviewedAt
+      - -26
+      - week
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - reviewedAt
+  - state
+  graph.metrics:
+  - count
+  series_settings:
+    approved:
+      color: '#84BB4C'
+    rejected:
+      color: '#ED6E6E'
+  stackable.stack_type: stacked
+card_schema: 24
+serdes/meta:
+- id: c4Wnfjy_dOrq4GJyE1sgt
+  label: reviews_per_week
+  model: Card
+type: question

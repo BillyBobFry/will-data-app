@@ -1,0 +1,69 @@
+name: Reports by source
+description: Where reports come from, based on the reason prefix (e.g. [Kwizaa]).
+entity_id: tmGp7_lj6vF-W1fVXk_XL
+created_at: '2026-09-28T19:31:17.065233Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: pie
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - expression
+      - {}
+      - Source
+    expressions:
+    - - case
+      - lib/expression-name: Source
+      - - - - starts-with
+            - {}
+            - - field
+              - {}
+              - - Trivia DB
+                - null
+                - report
+                - reason
+            - '[Kwizaa]'
+          - Kwizaa
+        - - - starts-with
+            - {}
+            - - field
+              - {}
+              - - Trivia DB
+                - null
+                - report
+                - reason
+            - '['
+          - Other client
+        - - - =
+            - {}
+            - - field
+              - {}
+              - - Trivia DB
+                - null
+                - report
+                - reason
+            - N/A
+          - API (no reason given)
+      - API (with reason)
+    source-table:
+    - Trivia DB
+    - null
+    - report
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  pie.dimension: Source
+  pie.metric: count
+card_schema: 24
+serdes/meta:
+- id: tmGp7_lj6vF-W1fVXk_XL
+  label: reports_by_source
+  model: Card
+type: question

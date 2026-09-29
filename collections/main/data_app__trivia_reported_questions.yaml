@@ -1,0 +1,9 @@
+name: 'Data App: trivia-reported-questions'
+entity_id: LsofgqDTZQwFmahFzk05O
+slug: data_app__trivia_reported_questions
+created_at: '2026-09-29T09:19:12.852724Z'
+serdes/meta:
+- id: LsofgqDTZQwFmahFzk05O
+  label: data_app__trivia_reported_questions
+  model: Collection
+is_remote_synced: true

@@ -1,0 +1,181 @@
+name: API Key Usage
+entity_id: 1wtlJ_50tV4wq1c2H_sd0
+created_at: '2026-09-11T10:26:59.199695Z'
+creator_id: will@example.com
+display: table
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - fields:
+    - - field
+      - base-type: type/MongoBSONID
+        effective-type: type/MongoBSONID
+      - - Trivia DB
+        - null
+        - apiKey
+        - _id
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - apiKey
+        - email
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20256'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20257'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '202511'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20263'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20268'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20269'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20264'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20265'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20266'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20267'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20261'
+        - requestCount
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - apiKey
+        - usage
+        - '20262'
+        - requestCount
+    source-table:
+    - Trivia DB
+    - null
+    - apiKey
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  table.cell_column: usage.20257.requestCount
+  table.columns:
+  - enabled: true
+    name: _id
+  - enabled: true
+    name: email
+  - enabled: true
+    name: usage.20256.requestCount
+  - enabled: true
+    name: usage.20257.requestCount
+  - enabled: true
+    name: usage.202511.requestCount
+  - enabled: true
+    name: usage.20261.requestCount
+  - enabled: true
+    name: usage.20262.requestCount
+  - enabled: true
+    name: usage.20263.requestCount
+  - enabled: true
+    name: usage.20264.requestCount
+  - enabled: true
+    name: usage.20265.requestCount
+  - enabled: true
+    name: usage.20266.requestCount
+  - enabled: true
+    name: usage.20267.requestCount
+  - enabled: true
+    name: usage.20268.requestCount
+  - enabled: true
+    name: usage.20269.requestCount
+  table.pivot: false
+  table.pivot_column: usage.20256.requestCount
+card_schema: 24
+serdes/meta:
+- id: 1wtlJ_50tV4wq1c2H_sd0
+  label: api_key_usage
+  model: Card
+dashboard_id: MTiozAgYVAcZVLGINdk6v
+type: question

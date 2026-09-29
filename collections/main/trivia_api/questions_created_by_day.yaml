@@ -1,0 +1,102 @@
+name: Questions created by day
+description: Trivia API questions created per day over the last 30 days, grouped by type.
+entity_id: -flS3RKDnvNmOGb17BZnH
+created_at: '2026-09-16T09:31:23.96104Z'
+creator_id: will@example.com
+display: line
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/DateTime
+        temporal-unit: day
+      - - Trivia DB
+        - null
+        - question
+        - createdAt
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - type
+    fields:
+    - - field
+      - base-type: type/MongoBSONID
+        effective-type: type/MongoBSONID
+      - - Trivia DB
+        - null
+        - question
+        - _id
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - state
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - type
+    - - field
+      - base-type: type/Text
+        effective-type: type/DateTime
+      - - Trivia DB
+        - null
+        - question
+        - createdAt
+    filters:
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    - - time-interval
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/DateTime
+        - - Trivia DB
+          - null
+          - question
+          - createdAt
+      - -30
+      - day
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - createdAt
+  - type
+  graph.metrics:
+  - count
+  graph.x_axis.scale: timeseries
+card_schema: 24
+serdes/meta:
+- id: -flS3RKDnvNmOGb17BZnH
+  label: questions_created_by_day
+  model: Card
+type: question

@@ -1,0 +1,130 @@
+name: Hardest questions
+description: Approved questions with at least 20 answers, lowest correct-answer rate first.
+entity_id: cOmcDioWBVPvcIAaJcA_G
+created_at: '2026-09-28T19:31:14.261393Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: table
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - expressions:
+    - - +
+      - lib/expression-name: Answers
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - correct
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - incorrect
+    - - /
+      - lib/expression-name: Correct rate
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - correct
+      - - +
+        - {}
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - question
+            - correctAnswerRatio
+            - correct
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - question
+            - correctAnswerRatio
+            - incorrect
+    fields:
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - question
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswer
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - category
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - difficulty
+    - - expression
+      - {}
+      - Answers
+    - - expression
+      - {}
+      - Correct rate
+    filters:
+    - - =
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    - - '>='
+      - {}
+      - - expression
+        - {}
+        - Answers
+      - 20
+    limit: 25
+    order-by:
+    - - asc
+      - {}
+      - - expression
+        - {}
+        - Correct rate
+    - - desc
+      - {}
+      - - expression
+        - {}
+        - Answers
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings:
+    '["name","Correct rate"]':
+      decimals: 1
+      number_style: percent
+card_schema: 24
+serdes/meta:
+- id: cOmcDioWBVPvcIAaJcA_G
+  label: hardest_questions
+  model: Card
+type: question

@@ -1,0 +1,175 @@
+name: Questions nobody has answered correctly
+entity_id: eYscdAPoNfaJOkQPsXBpO
+created_at: '2026-09-10T16:30:14.067589Z'
+creator_id: will@example.com
+display: table
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - expressions:
+    - - /
+      - lib/expression-name: Correct answer ratio
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - correct
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - incorrect
+    fields:
+    - - field
+      - base-type: type/MongoBSONID
+        effective-type: type/MongoBSONID
+      - - Trivia DB
+        - null
+        - question
+        - _id
+    - - expression
+      - base-type: type/Float
+        effective-type: type/Float
+      - Correct answer ratio
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswer
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - question
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - difficulty
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswerRatio
+        - correct
+    - - field
+      - base-type: type/Integer
+        effective-type: type/Integer
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswerRatio
+        - incorrect
+    - - field
+      - base-type: type/Array
+        effective-type: type/Array
+      - - Trivia DB
+        - null
+        - question
+        - rejectedAnswers
+        - en
+    filters:
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - type
+      - text_input
+    - - '>'
+      - {}
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - incorrect
+      - 10
+    - - is-null
+      - {}
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - correct
+    order-by:
+    - - desc
+      - {}
+      - - field
+        - base-type: type/Integer
+          effective-type: type/Integer
+        - - Trivia DB
+          - null
+          - question
+          - correctAnswerRatio
+          - incorrect
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  table.cell_column: correctAnswerRatio.correct
+  table.columns:
+  - enabled: true
+    name: _id
+  - enabled: true
+    name: question
+  - enabled: true
+    name: correctAnswer
+  - enabled: false
+    name: Correct answer ratio
+  - enabled: true
+    name: difficulty
+  - enabled: true
+    name: correctAnswerRatio.correct
+  - enabled: true
+    name: correctAnswerRatio.incorrect
+  - enabled: true
+    name: rejectedAnswers.en
+  table.pivot: false
+  table.pivot_column: Correct answer ratio
+card_schema: 24
+serdes/meta:
+- id: eYscdAPoNfaJOkQPsXBpO
+  label: questions_nobody_has_answered_correctly
+  model: Card
+dashboard_id: MTiozAgYVAcZVLGINdk6v
+type: question

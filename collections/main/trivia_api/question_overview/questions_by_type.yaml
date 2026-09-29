@@ -1,0 +1,53 @@
+name: Questions by type
+entity_id: X_85VrTertR3rzrtvvsYM
+created_at: '2026-09-10T16:32:01.515832Z'
+creator_id: will@example.com
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - type
+    filters:
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - type
+  graph.metrics:
+  - count
+  graph.x_axis.scale: ordinal
+card_schema: 24
+serdes/meta:
+- id: X_85VrTertR3rzrtvvsYM
+  label: questions_by_type
+  model: Card
+dashboard_id: MTiozAgYVAcZVLGINdk6v
+type: question

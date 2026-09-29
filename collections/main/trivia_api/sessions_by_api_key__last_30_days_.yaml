@@ -1,0 +1,141 @@
+name: Sessions by API key (last 30 days)
+description: Top 15 API keys by sessions started in the last 30 days.
+entity_id: WeMuuUShTCa9_U33k-RyD
+created_at: '2026-09-28T19:31:18.01734Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: row
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - lib/uuid: 46b21d6c-8c7a-4642-9676-c0de4bc817f2
+    breakout:
+    - - expression
+      - {}
+      - API key
+    expressions:
+    - - case
+      - lib/expression-name: API key
+      - - - - and
+            - {}
+            - - =
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - key
+              - - field
+                - {}
+                - - Trivia DB
+                  - null
+                  - session
+                  - apiKey
+            - - '!='
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - name
+              - ''
+          - - field
+            - join-alias: Key
+            - - Trivia DB
+              - null
+              - apiKey
+              - name
+      - - coalesce
+        - {}
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - notes
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - description
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - email
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - session
+            - apiKey
+    filters:
+    - - time-interval
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - session
+          - createdAt
+      - -30
+      - day
+    joins:
+    - alias: Key
+      conditions:
+      - - =
+        - {}
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - session
+            - apiKey
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - key
+      fields: none
+      stages:
+      - source-table:
+        - Trivia DB
+        - null
+        - apiKey
+        lib/type: mbql.stage/mbql
+      strategy: left-join
+      lib/type: mbql/join
+    limit: 15
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - {}
+        - 46b21d6c-8c7a-4642-9676-c0de4bc817f2
+    source-table:
+    - Trivia DB
+    - null
+    - session
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - API key
+  graph.metrics:
+  - count
+card_schema: 24
+serdes/meta:
+- id: WeMuuUShTCa9_U33k-RyD
+  label: sessions_by_api_key__last_30_days_
+  model: Card
+type: question

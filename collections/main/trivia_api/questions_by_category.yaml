@@ -1,0 +1,52 @@
+name: Questions by category
+entity_id: OE70mNnv_bzDlWiaRezi6
+created_at: '2026-09-10T16:16:22.028365Z'
+creator_id: will@example.com
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - question
+        - category
+    filters:
+    - - =
+      - {}
+      - - field
+        - base-type: type/Text
+          effective-type: type/Text
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - approved
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - category
+  graph.metrics:
+  - count
+  graph.x_axis.scale: ordinal
+card_schema: 24
+serdes/meta:
+- id: OE70mNnv_bzDlWiaRezi6
+  label: questions_by_category
+  model: Card
+type: question

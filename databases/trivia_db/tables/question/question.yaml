@@ -1,0 +1,868 @@
+collection_id: librarylibrarydatadat
+created_at: '2026-09-17T10:25:00.918184Z'
+field_order: database
+fields:
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 1
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: _id
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 0
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: acceptedAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 2
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: adultContent
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 3
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: aiPrompt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 4
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: assertion
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 5
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: assertionDuplicatesCheckedAt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 6
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: category
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 7
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: correctAnswerRatio
+    model: Field
+  - id: correct
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 8
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 9
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: nl
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 10
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: pt
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 11
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: tr
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 12
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: fr
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 13
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: de
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 14
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: hi
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 15
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: ru
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 16
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: es
+    model: Field
+  - id: correctAnswer
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 17
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: correctAnswerRatio
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- coercion_strategy: Coercion/ISO8601->DateTime
+  created_at: '2026-09-16T09:24:00.505973Z'
+  custom_position: 18
+  effective_type: type/DateTime
+  settings:
+    time_style: HH:mm
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: createdAt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 19
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: createdBy
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 20
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: de
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 21
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: difficulty
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 22
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: duplicatesCheckedAt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 23
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: embedding
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 24
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: assertion
+    model: Field
+  - id: embedding
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 25
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: acceptedAnswers
+    model: Field
+  - id: en
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 26
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: rejectedAnswers
+    model: Field
+  - id: en
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 27
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: es
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 28
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: fr
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 29
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: hi
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 30
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 31
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: id
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 32
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: correctAnswerRatio
+    model: Field
+  - id: incorrect
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 33
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 34
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: nl
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 35
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: pt
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 36
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: tr
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 37
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: fr
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 38
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: de
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 39
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: hi
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 40
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: ru
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 41
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: es
+    model: Field
+  - id: incorrectAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 42
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: isNiche
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 43
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: nl
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 44
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: pt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 45
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 46
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: nl
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 47
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: pt
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 48
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: tr
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 49
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: fr
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 50
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: de
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 51
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: hi
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 52
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: ru
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 53
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: es
+    model: Field
+  - id: question
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 54
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: random
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 55
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: region
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 56
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: regions
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 57
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: rejectedAnswers
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- coercion_strategy: Coercion/ISO8601->DateTime
+  created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 58
+  effective_type: type/DateTime
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: reviewedAt
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 59
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: reviewedBy
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 60
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: ru
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 61
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: state
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 62
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: tags
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 63
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: assertion
+    model: Field
+  - id: text
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 64
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: i18n
+    model: Field
+  - id: tr
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+- created_at: '2026-09-17T10:25:32.808817Z'
+  custom_position: 65
+  serdes/meta:
+  - id: Trivia DB
+    model: Database
+  - id: question
+    model: Table
+  - id: type
+    model: Field
+  - id: '1'
+    model: FieldUserSettings
+is_published: true
+serdes/meta:
+- id: Trivia DB
+  model: Database
+- id: question
+  model: Table
+- id: '1'
+  model: TableUserSettings

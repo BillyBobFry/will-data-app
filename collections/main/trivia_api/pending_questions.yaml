@@ -1,0 +1,40 @@
+name: Pending questions
+description: Questions waiting for review (state = pending).
+entity_id: w4gRTnr8D-uqRRBqhiQi8
+created_at: '2026-09-28T19:31:12.196351Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: scalar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - display-name: Pending questions
+        name: pending
+    filters:
+    - - =
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - pending
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+card_schema: 24
+serdes/meta:
+- id: w4gRTnr8D-uqRRBqhiQi8
+  label: pending_questions
+  model: Card
+type: question

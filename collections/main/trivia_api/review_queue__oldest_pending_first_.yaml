@@ -1,0 +1,172 @@
+name: Review queue (oldest pending first)
+description: Pending questions, oldest first, with the API key that submitted them.
+entity_id: AVadWajgUBke3Wxsiz99t
+created_at: '2026-09-28T19:31:12.929683Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: table
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - expressions:
+    - - case
+      - lib/expression-name: Author
+      - - - - and
+            - {}
+            - - =
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - key
+              - - field
+                - {}
+                - - Trivia DB
+                  - null
+                  - question
+                  - createdBy
+            - - '!='
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - name
+              - ''
+          - - field
+            - join-alias: Key
+            - - Trivia DB
+              - null
+              - apiKey
+              - name
+      - - coalesce
+        - {}
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - notes
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - description
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - email
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - question
+            - createdBy
+    fields:
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - createdAt
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - question
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - correctAnswer
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - category
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - difficulty
+    - - field
+      - {}
+      - - Trivia DB
+        - null
+        - question
+        - type
+    - - expression
+      - {}
+      - Author
+    filters:
+    - - =
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - state
+      - pending
+    joins:
+    - alias: Key
+      conditions:
+      - - =
+        - {}
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - question
+            - createdBy
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - key
+      fields: none
+      stages:
+      - source-table:
+        - Trivia DB
+        - null
+        - apiKey
+        lib/type: mbql.stage/mbql
+      strategy: left-join
+      lib/type: mbql/join
+    limit: 200
+    order-by:
+    - - asc
+      - {}
+      - - field
+        - {}
+        - - Trivia DB
+          - null
+          - question
+          - createdAt
+    source-table:
+    - Trivia DB
+    - null
+    - question
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+card_schema: 24
+serdes/meta:
+- id: AVadWajgUBke3Wxsiz99t
+  label: review_queue__oldest_pending_first_
+  model: Card
+type: question

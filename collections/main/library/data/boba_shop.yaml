@@ -1,0 +1,11 @@
+name: Boba Shop
+entity_id: s8fqhcvdQ0d5_znNKkPe2
+slug: boba_shop
+created_at: '2026-09-23T14:07:03.295376Z'
+type: library-data
+parent_id: librarylibrarydatadat
+serdes/meta:
+- id: s8fqhcvdQ0d5_znNKkPe2
+  label: boba_shop
+  model: Collection
+is_remote_synced: true

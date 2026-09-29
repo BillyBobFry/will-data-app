@@ -1,0 +1,130 @@
+name: Top quiz creators
+description: Top 10 API keys by quizzes created.
+entity_id: r-cnYVGQbje-I8cjiEA96
+created_at: '2026-09-28T19:31:18.993272Z'
+creator_id: api-key-user-ea3dd41f-83e0-4c50-9c3f-b75e8ac513b0@api-key.invalid
+display: row
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - lib/uuid: 5963d38b-4f18-46ff-9137-ba7323ba5061
+    breakout:
+    - - expression
+      - {}
+      - Creator
+    expressions:
+    - - case
+      - lib/expression-name: Creator
+      - - - - and
+            - {}
+            - - =
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - key
+              - - field
+                - {}
+                - - Trivia DB
+                  - null
+                  - quiz
+                  - createdBy
+            - - '!='
+              - {}
+              - - field
+                - join-alias: Key
+                - - Trivia DB
+                  - null
+                  - apiKey
+                  - name
+              - ''
+          - - field
+            - join-alias: Key
+            - - Trivia DB
+              - null
+              - apiKey
+              - name
+      - - coalesce
+        - {}
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - notes
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - description
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - email
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - quiz
+            - createdBy
+    joins:
+    - alias: Key
+      conditions:
+      - - =
+        - {}
+        - - field
+          - {}
+          - - Trivia DB
+            - null
+            - quiz
+            - createdBy
+        - - field
+          - join-alias: Key
+          - - Trivia DB
+            - null
+            - apiKey
+            - key
+      fields: none
+      stages:
+      - source-table:
+        - Trivia DB
+        - null
+        - apiKey
+        lib/type: mbql.stage/mbql
+      strategy: left-join
+      lib/type: mbql/join
+    limit: 10
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - {}
+        - 5963d38b-4f18-46ff-9137-ba7323ba5061
+    source-table:
+    - Trivia DB
+    - null
+    - quiz
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - Creator
+  graph.metrics:
+  - count
+card_schema: 24
+serdes/meta:
+- id: r-cnYVGQbje-I8cjiEA96
+  label: top_quiz_creators
+  model: Card
+type: question
