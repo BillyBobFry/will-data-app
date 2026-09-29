@@ -6,6 +6,7 @@ import {
 import { useMemo, useState } from "react";
 
 import { ReportList as ReportListQuery } from "../queries/reports.query";
+import CategoryBreakdown from "./components/CategoryBreakdown";
 import QuestionPanel from "./components/QuestionPanel";
 import ReportList from "./components/ReportList";
 import StatusTabs from "./components/StatusTabs";
@@ -72,6 +73,8 @@ export default function App() {
       </header>
 
       <StatusTabs value={status} onChange={setStatus} />
+
+      <CategoryBreakdown status={status} />
 
       <div style={{ display: "flex", gap: 20, flexWrap: "wrap", flex: 1 }}>
         <div
