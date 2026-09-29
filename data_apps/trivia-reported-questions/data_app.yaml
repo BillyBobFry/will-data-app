@@ -4,7 +4,7 @@ name: Trivia Reported Questions
 
 description: Review trivia questions that players have reported from the Trivia API database.
 
-path: ./dist/index.js
+path: ./dist/somethingelse.js
 
 # Origins this app may call with fetch/XHR. Everything else is blocked — both in
 # `npm run dev` (via the dev server's CSP) and inside Metabase (the sandbox).
