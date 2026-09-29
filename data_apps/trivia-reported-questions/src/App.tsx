@@ -67,7 +67,7 @@ export default function App() {
         <h1 style={{ margin: 0, fontSize: 24 }}>Reported questions!!!</h1>
         <p style={{ margin: "4px 0 0", color: "#6b7280" }}>
           Trivia questions players have flagged as wrong, confusing, or
-          inappropriate.
+          inappropriate. And some more stuff, is this going to sync?
         </p>
       </header>
 
