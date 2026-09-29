@@ -1,0 +1,43 @@
+name: ReportCountsByQuestion
+entity_id: a4lppN4Lpi2tME7HDQX2A
+created_at: '2026-09-29T12:04:14.776858Z'
+creator_id: api-key-user-8d1d439c-8936-466b-85dd-f3969a116d47@api-key.invalid
+display: table
+collection_id: LsofgqDTZQwFmahFzk05O
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia DB
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia DB
+        - null
+        - report
+        - questionId
+    - - field
+      - base-type: type/Boolean
+        effective-type: type/Boolean
+      - - Trivia DB
+        - null
+        - report
+        - actioned
+    source-table:
+    - Trivia DB
+    - null
+    - report
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+card_schema: 24
+serdes/meta:
+- id: a4lppN4Lpi2tME7HDQX2A
+  label: reportcountsbyquestion
+  model: Card
+type: question
