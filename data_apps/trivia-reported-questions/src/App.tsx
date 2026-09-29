@@ -8,6 +8,7 @@ import { useMemo, useState } from "react";
 import { ReportList as ReportListQuery } from "../queries/reports.query";
 import CategoryBreakdown from "./components/CategoryBreakdown";
 import QuestionPanel from "./components/QuestionPanel";
+import RandomQuestion from "./components/RandomQuestion";
 import ReportList from "./components/ReportList";
 import StatusTabs from "./components/StatusTabs";
 import type { Report, ReportStatus } from "./types/report";
@@ -64,6 +65,8 @@ export default function App() {
         gap: 20,
       }}
     >
+      <RandomQuestion />
+
       <header>
         <h1 style={{ margin: 0, fontSize: 24 }}>Reported questions!!!</h1>
         <p style={{ margin: "4px 0 0", color: "#6b7280" }}>
