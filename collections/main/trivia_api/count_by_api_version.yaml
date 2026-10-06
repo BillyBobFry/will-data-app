@@ -1,0 +1,56 @@
+name: Count by API Version
+entity_id: 16m6CIqz9HjNPF34DRzs5
+created_at: '2026-10-02T13:36:57.639555Z'
+creator_id: will@example.com
+display: pie
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia API Server Logs
+  stages:
+  - aggregation:
+    - - count
+      - {}
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia API Server Logs
+        - trivia_api_logs
+        - run_googleapis_com_stdout
+        - jsonPayload
+        - apiversion
+    fields:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia API Server Logs
+        - trivia_api_logs
+        - run_googleapis_com_stdout
+        - logName
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia API Server Logs
+        - trivia_api_logs
+        - run_googleapis_com_stdout
+        - jsonPayload
+        - apiversion
+    source-table:
+    - Trivia API Server Logs
+    - trivia_api_logs
+    - run_googleapis_com_stdout
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  pie.dimension:
+  - jsonPayload.apiversion
+  pie.metric: count
+card_schema: 24
+serdes/meta:
+- id: 16m6CIqz9HjNPF34DRzs5
+  label: count_by_api_version
+  model: Card
+type: question

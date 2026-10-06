@@ -1,0 +1,15 @@
+coercion_strategy: Coercion/ISO8601->DateTime
+created_at: '2026-09-16T09:24:00.505973Z'
+custom_position: 18
+effective_type: type/DateTime
+settings:
+  time_style: HH:mm
+serdes/meta:
+- id: Trivia DB
+  model: Database
+- id: question
+  model: Table
+- id: createdAt
+  model: Field
+- id: '1'
+  model: FieldUserSettings

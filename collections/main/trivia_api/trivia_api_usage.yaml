@@ -1,0 +1,47 @@
+name: Trivia API Usage
+entity_id: aPE6hy2gPVAEfckDU-tJ2
+created_at: '2026-10-02T13:54:54.691348Z'
+creator_id: will@example.com
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+serdes/meta:
+- id: aPE6hy2gPVAEfckDU-tJ2
+  label: trivia_api_usage
+  model: Dashboard
+dashcards:
+- entity_id: va1WhkqJTgRfByBi65xc0
+  card_id: 16m6CIqz9HjNPF34DRzs5
+  created_at: '2026-10-02T13:55:45.894295Z'
+  row: 0
+  col: 0
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: aPE6hy2gPVAEfckDU-tJ2
+    model: Dashboard
+  - id: va1WhkqJTgRfByBi65xc0
+    model: DashboardCard
+- entity_id: JtnZg9jQOuUHqJd2b6Vn3
+  card_id: dhCILvetrCpth81kXMPVX
+  created_at: '2026-10-02T13:55:45.894295Z'
+  row: 0
+  col: 12
+  size_x: 12
+  size_y: 8
+  inline_parameters: []
+  parameter_mappings: []
+  series: []
+  visualization_settings:
+    column_settings: null
+  serdes/meta:
+  - id: aPE6hy2gPVAEfckDU-tJ2
+    model: Dashboard
+  - id: JtnZg9jQOuUHqJd2b6Vn3
+    model: DashboardCard
+tabs: []
+width: fixed

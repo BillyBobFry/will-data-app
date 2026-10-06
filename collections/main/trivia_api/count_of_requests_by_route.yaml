@@ -1,0 +1,50 @@
+name: Count of requests by route
+entity_id: dhCILvetrCpth81kXMPVX
+created_at: '2026-10-02T13:48:40.464599Z'
+creator_id: will@example.com
+display: bar
+collection_id: 5qfLb9Uh-eaKxVzd4566F
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Trivia API Server Logs
+  stages:
+  - aggregation:
+    - - count
+      - lib/uuid: b963ac67-9adf-4110-ac95-432d8a683d91
+    breakout:
+    - - field
+      - base-type: type/Text
+        effective-type: type/Text
+      - - Trivia API Server Logs
+        - trivia_api_logs
+        - run_googleapis_com_stdout
+        - jsonPayload
+        - route
+    order-by:
+    - - desc
+      - {}
+      - - aggregation
+        - base-type: type/Integer
+          effective-type: type/Integer
+          lib/source-name: count
+        - b963ac67-9adf-4110-ac95-432d8a683d91
+    source-table:
+    - Trivia API Server Logs
+    - trivia_api_logs
+    - run_googleapis_com_stdout
+    lib/type: mbql.stage/mbql
+  lib/type: mbql/query
+visualization_settings:
+  column_settings: null
+  graph.dimensions:
+  - jsonPayload.route
+  graph.metrics:
+  - count
+  graph.x_axis.scale: ordinal
+card_schema: 24
+serdes/meta:
+- id: dhCILvetrCpth81kXMPVX
+  label: count_of_requests_by_route
+  model: Card
+type: question

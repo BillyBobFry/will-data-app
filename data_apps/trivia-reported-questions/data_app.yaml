@@ -1,13 +1,12 @@
-version: 1
-
-name: Trivia Reported Questions
-
-description: Review trivia questions that players have reported from the Trivia API database.
-
-path: ./dist/index.js
-
-# Origins this app may call with fetch/XHR. Everything else is blocked — both in
-# `npm run dev` (via the dev server's CSP) and inside Metabase (the sandbox).
-# The Metabase instance itself is reached through the SDK, not listed here.
 allowed_hosts:
-  - https://the-trivia-api.com
+- https://the-trivia-api.com
+created_at: '2026-09-29T09:19:12.813187Z'
+description: Review trivia questions that players have reported from the Trivia API database.
+entity_id: bf4c43dbb3914d93b8993
+name: Trivia Reported Questions
+path: data_apps/trivia-reported-questions/dist/index.js
+slug: trivia-reported-questions
+serdes/meta:
+- id: bf4c43dbb3914d93b8993
+  label: trivia_reported_questions
+  model: DataApp
